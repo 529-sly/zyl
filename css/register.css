@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url(../images/banner4.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.reg_r {
+    width: 600px;
+    height: 400px;
+    background-color: rgba(245, 245, 245, 0.84);
+    color: gray;
+    font-size: 20px;
+    position: relative;
+    margin: 100px auto;
+    padding: 30px;
+    padding-left: 100px;
+}
+
+.reg_r h1 {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-size: 20px;
+    margin-left: -50px;
+}
+
+.reg_r input {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.reg_r a {
+    margin-left: 150px;
+    color: gray;
+    font-size: 14px;
+}
+
+.reg_r button {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 25px;
+    font-size: 14px;
+    background-color: #612604;
+    color: #fff;
+    border: none;
+}
+
+
+
+
+.reg_r p {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.reg_r .zc {
+    margin-left: 0;
+    color: #612604;
+}
+
+.remberpwd {
+    margin-left: 50px;
+    color: gray;
+    font-size: 14px;
+}

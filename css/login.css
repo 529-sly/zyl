@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url(../images/banner.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.register {
+    width: 800px;
+    height: 400px;
+    margin: 100px auto;
+}
+
+.reg_l {
+    float: left;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.reg_l p {
+    margin-top: 20px;
+    text-align: center;
+    color: #ccc;
+}
+
+.method {
+    width: 200px;
+    height: 40px;
+    padding-left: 112px;
+}
+
+.method img {
+    margin: 10px 5px;
+}
+
+.reg_l .user {
+    position: absolute;
+    top: 100px;
+    left: 130px;
+}
+
+.reg_l h2 {
+    text-align: center;
+    margin-top: 250px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.reg_r {
+    float: left;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(245, 245, 245, 0.84);
+
+    color: gray;
+    font-size: 14px;
+    position: relative;
+}
+
+.reg_r label {
+    position: absolute;
+    top: 200px;
+    right: 50px;
+}
+
+.reg_r h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.reg_r .dl {
+    margin: 20px 50px;
+    width: 300px;
+    height: 30px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.reg_r button {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 25px;
+    font-size: 14px;
+    background-color: #612604;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.reg_r p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.reg_r .zc {
+    margin-left: 0;
+    color: #612604;
+}
+
+.remberpwd {
+    margin-left: 50px;
+    color: gray;
+    font-size: 14px;
+}
+
+.reg_r a {
+    margin-left: 150px;
+    color: gray;
+    font-size: 14px;
+}

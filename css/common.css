@@ -1,0 +1,118 @@
+/* 网页初始化 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* 网页顶部区域样式 */
+.top {
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    margin: 10px 0;
+    color: #000000;
+    font-family: STZhongsong;
+    font-size: 14px;
+
+}
+
+
+
+.top h1 a {
+    float: right;
+    font-size: 18px;
+    color: #4e4a0b;
+}
+
+.top h1 a:hover {
+    font-weight: 600;
+    color: #686868;
+
+}
+
+.top img {
+
+
+
+    float: left;
+    width: 80px;
+    height: 80px;
+
+}
+
+
+.header {
+    width: 1200px;
+    height: 600px;
+}
+
+.header img {
+    width: 1200px;
+    height: 600px;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto
+}
+
+/* 网页导航栏区域样式 */
+.nav {
+    height: 50px;
+    line-height: 50px;
+    background-color: #612604;
+}
+
+.nav ul {
+    width: 1000px;
+    margin-left: 190px;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a {
+    padding: 0px 50px;
+    color: #ffffff;
+}
+
+.nav ul li a:hover {
+    font-weight: 600;
+    color: rgb(129, 129, 129);
+}
+
+/* 网页页脚区域样式 */
+.footer {
+    position: relative;
+    height: 170px;
+    text-align: center;
+    color: #fdfdfd;
+    background-color: #612604;
+    padding-top: 40px;
+}
+
+.footer p {
+    margin-top: 5px;
+}
+
+.footer img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    float: right;
+    top: 50px;
+    right: 200px;
+}

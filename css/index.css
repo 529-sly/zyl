@@ -1,0 +1,179 @@
+/* 网页轮播图 */
+
+header {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    /* box-shadow: 0px 0px 10px 5px rgb(255, 255, 255); */
+
+}
+
+#time {
+    margin-left: 150px;
+    font-size: 20px;
+}
+
+.pic_list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 900%;
+}
+
+.pic_list li {
+    list-style: none;
+    float: left;
+    z-index: 999;
+    /* top: 350px;
+    left: 200px; */
+}
+
+.pic_list li img {
+    width: 1200px;
+    height: 600px;
+}
+
+.arr_l,
+.arr_r {
+    display: none;
+    position: absolute;
+    margin-top: -20px;
+    top: 50%;
+    width: 24px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(253, 253, 253, 0.3);
+    z-index: 3;
+}
+
+.arr_r {
+    right: 0;
+}
+
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -21px;
+}
+
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.current {
+    background-color: #fff;
+}
+
+
+
+/* 
+网页正文 */
+.section {
+    height: 600px;
+    padding: 20px;
+}
+
+.sl h1 {
+    margin-bottom: 10px;
+}
+
+.sl p {
+
+    color: gray;
+    margin-top: 10px;
+}
+
+.section video {
+    margin-top: 8px;
+    width: 750px;
+    height: 440px;
+}
+
+.sl {
+    width: 750px;
+    padding-left: 30px;
+    float: right;
+    padding-top: 30px;
+}
+
+.sl p {
+    font-size: 18px;
+    text-indent: 2em;
+    line-height: 35px;
+    margin-top: 10px;
+}
+
+.sr {
+    width: 380px;
+    height: 420px;
+    float: left;
+    padding: 10px;
+}
+
+.sl h5 {
+    font-weight: 400;
+    color: rgb(53, 53, 53);
+    font-size: 18px;
+}
+
+.sr img {
+    margin: 10px 0;
+    width: 320px;
+    height: 480px;
+}
+
+
+
+.s {
+    margin-top: 20px;
+    height: 500px;
+}
+
+.s h5 {
+    margin: 10px 0;
+    font-weight: 400;
+    color: gray;
+}
+
+.s ul {
+    padding-top: 20px;
+}
+
+.s ul li {
+    height: 200px;
+    float: left;
+    margin-right: 88px;
+}
+
+.s ul li p {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.s ul li p strong {
+    font-size: 16px;
+}
+
+
+.s ul li:nth-child(4) {
+    margin-right: 0;
+}
+
+.s ul li img {
+    width: 234px;
+    height: 340px;
+    border: 15px solid #612604
+}
