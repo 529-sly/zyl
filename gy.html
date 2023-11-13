@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gy.css">
+    <link rel="stylesheet" href="css/common.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="top">
+        <div class="w">
+            <h1> <img src="images/logo.png" alt="">S L Y 相声世界<a href="login.html">登录/注册</a>
+            </h1>
+        </div>
+
+    </div>
+    <div class="nav">
+        <div class="w">
+            <ul>
+                <li><a href="index.html">网站首页</a></li>
+                <li><a href="about.html">人物经历</a></li>
+                <li><a href="pop.html">经典作品</a></li>
+                <li><a href="pj.html">人物评价</a></li>
+                <li><a href="gy.html">关于我们</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="box" style="text-align: center;">
+        <video width="1000" height="430" controls style="margin: 20px auto;">
+            <source src="./images/video.mp4" type="video/ogg">
+
+        </video>
+    </div>
+
+    <div class="comments-container">
+        <h2>留言板</h2>
+        <div id="comments-list"></div>
+        <form id="comment-form" class="comment-form">
+            <input type="text" id="comment-input" placeholder="添加评论">
+            <input type="submit" value="提交评论">
+        </form>
+    </div>
+    <script>
+        var commentsList = document.getElementById("comments-list");
+        var commentForm = document.getElementById("comment-form");
+        var commentInput = document.getElementById("comment-input");
+
+        // 初始评论数据
+        var initialComments = [
+            "#张云雷国风开口跪#琉璃盏斟满望眼欲穿 ，隔千江万里一首桃花扇 ，佳人何盼 ​",
+            "最棒的张云雷//@辫儿的柠檬不酸_哥巡演来山东:老公你要相信你是最棒的 无论是哪个身份 加油哦 ",
+            "喜欢海，喜欢花，喜欢日出和日落，浪漫的年纪，最喜欢的是你@小辫儿张云雷 ​",
+            "你知道月亮为什么两头尖尖，中间弧形吗？因为锋芒对外，温柔向你。@小辫儿张云雷 ​",
+            "穿皮衣的小辫儿变成了帅小伙啦 站在师傅旁边的小孩 现在也可以独当一面啦"
+        ];
+
+        // 保存评论的数组
+        var comments = initialComments.slice();
+
+        // 添加评论
+        function addComment(comment) {
+            comments.push(comment);
+            renderComments();
+        }
+
+        // 删除评论
+        function deleteComment(index) {
+            comments.splice(index, 1);
+            renderComments();
+        }
+
+        // 渲染评论列表
+        function renderComments() {
+            commentsList.innerHTML = "";
+
+            for (var i = 0; i < comments.length; i++) {
+                var comment = comments[i];
+
+                var commentElement = document.createElement("div");
+                commentElement.className = "comment";
+
+                var commentText = document.createElement("div");
+                commentText.className = "comment-text";
+                commentText.textContent = comment;
+                commentElement.appendChild(commentText);
+
+                var commentActions = document.createElement("div");
+                commentActions.className = "comment-actions";
+                var deleteButton = document.createElement("button");
+                deleteButton.className = "delete-btn";
+                deleteButton.textContent = "删除";
+                deleteButton.addEventListener("click", (function (index) {
+                    return function () {
+                        deleteComment(index);
+                    };
+                })(i));
+                commentActions.appendChild(deleteButton);
+                commentElement.appendChild(commentActions);
+
+                commentsList.appendChild(commentElement);
+            }
+        }
+
+        // 提交评论的事件处理程序
+        commentForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            var commentText = commentInput.value.trim();
+            if (commentText !== "") {
+                addComment(commentText);
+                commentInput.value = "";
+            }
+        });
+
+        // 初始化渲染评论列表
+        renderComments();
+    </script>
+
+    <div class="footer">
+        <div class="w">
+
+            <h1>SLY的相声世界 </h1>
+            <p>Copyright © 2023 SLY Limited All Rights Reserved</p>
+            <img src="images/logo.png" alt="">
+
+        </div>
+    </div>
+</body>
+
+</html>
